@@ -1,0 +1,165 @@
+# LGE BCM43455 H+GLOBAL Rev 1.0 - 20160824
+NVRAMRev=$Rev: 498373 $
+sromrev=11
+vendid=0x14e4
+devid=0x43ab
+manfid=0x2d0
+prodid=0x06e4
+
+#Dummy Mac. Address
+macaddr=00:90:0C:BA:CD:88
+
+nocrc=1
+boardtype=0x6e4
+boardrev=0x1304
+
+#XTAL 37.4MHz
+xtalfreq=37400
+##2G RSSI compensation 20/40
+rssicorrnorm_c0=3,3
+
+
+##5G RSSI compenation Low(36-48):20/40/80, Mid(54-64):20/40/80, High(100-140):20/40/80, X1(149-165):20/40/80
+#rssicorrnorm5g_c0=0,0,0,0,0,0,0,0,0,2,2,2
+
+#------------------------------------------------------
+#boardflags: 5GHz eTR switch by default
+#            2.4GHz eTR switch by default
+#            bit1 for btcoex
+boardflags=0x00080201
+boardflags2=0x40000000
+boardflags3=0x48200100
+phycal_tempdelta=15
+rxchain=1
+txchain=1
+aa2g=1
+aa5g=1
+ag0=0
+tssipos5g=1
+tssipos2g=1
+femctrl=0
+AvVmid_c0=0,157,1,126,1,126,1,126,1,126
+
+pa2ga0=0xffd3,0x1773,0xfdcc
+pa2ga1=0xffb8,0x1006,0xfdbf
+pa5ga0=0xffae,0x16da,0xfdb1,0xffb1,0x1720,0xfda6,0xffae,0x16dd,0xfda2,0xffa9,0x1640,0xfda2
+pa5ga1=0x0037,0x0ef0,0xfde9,0x0058,0x0f41,0xfdea,0x0049,0x0eea,0xfe02,0x001d,0x0e07,0xfe01
+
+
+itrsw=1
+cckpwroffset0=0
+cckbw202gpo=0x0000
+
+
+pdoffset2g40ma0=10
+pdoffset40ma0=0xaaaa
+pdoffset80ma0=0xaaaa
+extpagain5g=2
+extpagain2g=2
+
+lowpowerrange2g=0
+lowpowerrange5g=0
+tworangetssi2g=1
+tworangetssi5g=1
+# LTECX flags
+# WCI2
+ltecxmux=0
+ltecxpadnum=0x0504
+ltecxfnsel=0x22
+ltecxgcigpio=0x32
+
+#---------------------------------------------------------------------
+# CCK Output Power = (66/4=17.5)-1.5 = 15dBm
+maxp2ga0=66
+
+
+
+# MCS1&2(11n&ac 40M) / MCS1&2 (11n&ac 20M) / 12&18Mbps(11a/g) / 6&9(11a/g)
+#-/-/13/13
+ofdmlrbw202gpo=0x0044
+
+
+# 54/48/36/24M power offset
+#12/12/13/13
+dot11agofdmhrbw202gpo=0x6644
+
+
+# C9/C8/M7/M6/M5/M4/M3/M0-2 ( if need to control MCS1 and MCS 2 separately, then use ofdmlrbw202gpo)
+# C9/C8/M7/M6/M5/M4/M3/M0-2
+#11/11/12/12/12.5/12.5/12.5/12.5
+mcsbw202gpo=0x88665555
+mcsbw402gpo=0x88665555
+
+
+#-----------------------------------------------------------------------------
+# 5G Output Power Set : maxp5ga0 66 = 15dBm (66/4=16.5-1.5=15)
+maxp5ga0=66,66,66,66
+
+
+# C9/C8/M7/M6(54M)/M5(48M)/M4(36M)/M3(24M)/M0.2(18M/12M/9M/6M)
+#11/11/11/11/11.5/11.5/11.5/11.5
+mcsbw205glpo=0x88887777
+mcsbw205gmpo=0x88887777
+mcsbw205ghpo=0x88887777
+
+
+
+# C9/C8/M7/M6/M5/M4/M3/M0.2
+#10.5/10.5/10.5/10.5/11/11/11/11
+mcsbw405glpo=0x99998888
+mcsbw405gmpo=0x99998888
+mcsbw405ghpo=0x99998888
+
+
+
+# C9/C8/M7/M6/M5/M4/M3/M0.2
+#10/10/10/10/10.5/10.5/10.5/10.5
+mcsbw805glpo=0xAAAA9999
+mcsbw805gmpo=0xAAAA9999
+mcsbw805ghpo=0xAAAA9999
+
+
+
+
+
+swctrlmap_2g=0x00040004,0x00020002,0x00040004,0x010a02,0x1ff
+swctrlmap_5g=0x00100010,0x00200020,0x00200020,0x010a02,0x2f4
+swctrlmapext_5g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+swctrlmapext_2g=0x00000000,0x00000000,0x00000000,0x000000,0x000
+
+vcodivmode=1
+deadman_to=481500000
+
+ed_thresh2g=-54
+ed_thresh5g=-54
+eu_edthresh2g=-54
+eu_edthresh5g=-54
+ldo1=4
+rawtempsense=0x1ff
+muxenab=0x10
+#For Firmware 57 and later
+cckPwrIdxCorr=3
+dot11b_opts=0x3aa85
+## Enabling OOB signal
+host_wake_opt=0
+
+#2.4G TX Compensation parameter for 2.4G(-15 ~ +3dB)
+powoffs2gtna0=2,2,2,2,1,0,0,0,1,2,-5,4,5,0
+
+#5G TX Compensation parameter(CH36, Ch64, CH100, CH140, CH144, CH149, CH165)(-15 ~ +3dB)
+#powoffs5g20mtna0=0,0,0,0,0,0,0
+
+#5G TX Compensation parameter(CH38, Ch62, CH102, CH142 CH151)(-15 ~ +3dB)
+#powoffs5g40mtna0=0,0,0,0,0
+
+#5G TX Compensation parameter(CH42, Ch58, CH106, CH138, CH155) (-15 ~ +3dB)
+powoffs5g80mtna0=0,0,-3,0,0
+
+
+# Set btc_params for BT coex issue
+btc_params80=0
+cbfilttype=2
+fdsslevel_ch1=6
+fdsslevel_ch11=4
+#cck digital filter type (default=6) - for cck SPMSK
+cckdigfilttype=5
