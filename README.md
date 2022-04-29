@@ -1,6 +1,7 @@
-# Android-device-lge-v20Variants
-All v20 Variants in one!
+# Android-device-lge-msm8996Variants
+All v20/G5 Variants in one!
 Based off of https://github.com/xxseva44/LGV20-DeviceVariants
+As well as official LG G5 Device Trees
 
 ##Credits##
 
@@ -13,3 +14,5 @@ Lybxlpsv
 Justin
 
 Stealth
+
+x86-cpu
