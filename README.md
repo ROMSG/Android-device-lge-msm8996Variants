@@ -15,4 +15,4 @@ Justin
 
 Stealth
 
-x86-cpu
+x86cpu
