@@ -1,0 +1,7 @@
+# Bluetooth
+vendor/firmware/BCM4345C0_003.001.025.0139.0223.HCD:vendor/firmware/BCM4345C0.hcd
+
+# WiFi
+vendor/firmware/fw_bcmdhd.bin
+vendor/firmware/fw_bcmdhd_apsta.bin
+vendor/firmware/fw_bcmdhd_mfg.bin
