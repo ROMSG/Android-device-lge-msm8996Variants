@@ -1,0 +1,17 @@
+# Lights
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service.lucye		u:object_r:hal_light_default_exec:s0
+
+# Fingerprint
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.lucye		u:object_r:hal_fingerprint_lucye_exec:s0
+
+# LGE Bootproperty
+/vendor/bin/hw/vendor.lge.hardware.bootproperty@1.0-service			u:object_r:vendor_file:s0
+
+# LGE Configstore
+/vendor/bin/hw/vendor.lge.hardware.configstore@1.0-service			u:object_r:vendor_file:s0
+
+# LGE Platform
+/vendor/bin/hw/vendor.lge.hardware.platform@1.1-service				u:object_r:vendor_file:s0
+
+# LGE Property
+/vendor/bin/hw/vendor.lge.hardware.property@1.2-service				u:object_r:vendor_file:s0
