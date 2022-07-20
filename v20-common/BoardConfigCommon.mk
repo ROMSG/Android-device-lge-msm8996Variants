@@ -27,9 +27,6 @@ TARGET_LD_SHIM_LIBS += \
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_COMMON_PATH)/manifest.xml
 
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/lge/msm8996
-
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 

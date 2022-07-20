@@ -16,16 +16,18 @@
 
 DEVICE_COMMON_PATH := device/lge/g6-common
 
+# Custom Manifest
+DEVICE_MANIFEST_FILE += $(DEVICE_COMMON_PATH)/manifest.xml
+
+# Kernel
+TARGET_KERNEL_SOURCE := kernel/lge/msm8996
+
 # inherit from common msm8996
 -include device/lge/msm8996-common/BoardConfigCommon.mk
 
 # Display
 TARGET_HAS_HDR_DISPLAY := true
 TARGET_HAS_WIDE_COLOR_DISPLAY := true
-TARGET_USES_COLOR_METADATA := true
-
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/lge/msm8996-g6
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
@@ -38,11 +40,8 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 41943040
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 6064963584
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 23026728960
 
-# Assertions
-TARGET_BOARD_INFO_FILE := $(DEVICE_COMMON_PATH)/board-info.txt
-
 # SELinux policies
 BOARD_SEPOLICY_DIRS += $(DEVICE_COMMON_PATH)/sepolicy
 
 # inherit from the proprietary version
--include vendor/lge/g6-common/BoardConfigVendor.mk
+include vendor/lge/g6-common/BoardConfigVendor.mk
