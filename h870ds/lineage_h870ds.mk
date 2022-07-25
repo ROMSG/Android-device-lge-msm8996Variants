@@ -23,9 +23,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit from h870ds device
 $(call inherit-product, device/lge/h870ds/device.mk)
-
-# Security patch level
-PLATFORM_SECURITY_PATCH_OVERRIDE := 2019-05-01
 	
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
 

@@ -24,10 +24,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from us997 device
 $(call inherit-product, device/lge/us997/device.mk)
 
-# Security patch level
-PLATFORM_SECURITY_PATCH_OVERRIDE := 2019-02-01	
-VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
-
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := us997
 PRODUCT_NAME := lineage_us997
