@@ -24,8 +24,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from h870ds device
 $(call inherit-product, device/lge/h870ds/device.mk)
 	
-VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH_OVERRIDE)
-
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := h870ds
 PRODUCT_NAME := lineage_h870ds
