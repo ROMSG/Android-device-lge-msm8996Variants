@@ -52,6 +52,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
+#Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service-qti \
+		android.hardware.power.stats@1.0-service.mock \
+		vendor.qti.hardware.perf@2.0.vendor
+		
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensors/sensor_def_lucye.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_common.conf
